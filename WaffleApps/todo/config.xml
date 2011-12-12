@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns="http://www.w3.org/ns/widgets" 
+    id="com.fsck.waffle"
+    version="0.1"
+    viewmodes="application">
+    
+    <name>Todos</name>
+    <description>Backbone.js's todo demo</description>
+    <content src="index.html" />
+
+    <!--
+        features are used to control the JS API that will be available to a
+        waf application.
+    -->
+    <feature name="http://kindle.amazon.com/apis" required="true">
+        <param name="appmgr" value="no"/>
+        <param name="chrome" value="yes"/>
+        <param name="dconfig" value="yes"/>
+        <param name="dev" value="no"/>
+        <param name="download" value="no"/>
+        <param name="drag" value="yes"/>                            
+        <param name="gestures" value="yes"/>
+        <param name="hold" value="no"/>
+        <param name="messaging" value="no"/>
+        <param name="multi_tap" value="yes"/>
+        <param name="net" value="no"/>
+        <param name="pinchzoom" value="no"/>
+        <param name="swipe" value="no"/>
+        <param name="tap" value="yes"/>
+        <param name="todo" value="no"/>
+        <param name="viewport" value="yes"/>
+    </feature>
+
+</widget>
+
