@@ -58,7 +58,7 @@
     <script type="text/template" id="item-template">
       <div class="todo <%= done ? 'done' : '' %>">
         <div class="display">
-          <input class="check" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
+          <div class="check-wrapper"><input class="check" type="checkbox" <%= done ? 'checked="checked"' : '' %> /></div>
           <div class="todo-text"></div>
           <span class="todo-destroy"></span>
         </div>

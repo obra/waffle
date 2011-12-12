@@ -129,11 +129,14 @@ html {
       -o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
       box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
     }
+  #todo-list .check-wrapper {
+	padding: 0.5em;
+	float: left;
+  }
   #todo-list .check {
-    position: relative;
-    top: 9px;
-    margin: 0 10px 0 7px;
-    float: left;
+  }
+  #todo-list .todo-text {
+     margin-left: 2em;
   }
   #todo-list .done .todo-text {
     text-decoration: line-through;
