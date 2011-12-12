@@ -1,0 +1,19 @@
+#!/usr/bin/env perl
+use MP3::Tag;
+use autodie;
+
+my $file = shift;
+
+my $content =<<'EOF';
+<button type="button" style="width:100%;height:100%" onclick="javascript:nativeBridge.dbgCmd('/bin/sh /mnt/base-us/WaffleApps/todos/start.sh');">Launch Todos</button>
+EOF
+
+my $author = "Jesse Vincent (technique by Yifan Lu)";
+
+
+system("cp empty.mp3 $file");
+
+$mp3 = MP3::Tag->new($file);
+$mp3->title_set($content); 
+$mp3->artist_set($author);
+$mp3->update_tags;
