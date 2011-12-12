@@ -1,0 +1,78 @@
+v0.1 - 2011-12-12
+
+
+This package contains a prototype todo list application for the Kindle Touch. 
+
+The Kindle Touch is an interesting beast. Much of its user interface
+is built in HTML5. (The browser "application" itself is just some
+JavaScript, HTML and CSS wrapped around the platform's built-in
+WebKit rendering engine running full-screen in X11.
+
+Yesteday, Yifan Lu (http:yifan.lu) released a tool to allow Kindle
+Touch owners to gain root access to their devices. This tool took 
+advantage of the fact that the MP3 player app on the Kindle Touch 
+renders the titles of .mp3 files as HTML.
+
+I spent a bit of time poking around my Kindle Touch last night - I
+found all sorts of neat stuff. One item stood out - "waf", the
+Kindle's client-side Web Application Framework.  Amazon have used
+it to build their updated on-device Kindle Store, as well as some
+other bits and pieces.
+
+On a lark, I cobbled together enough bits to run the "Todo list" demo
+that ships with bootstrap.js. It ran. It even ran reasonably well.
+
+Using Yifan's "Musical Launcher" technique, I've polished up this
+todo list demo to the point where it should run fine on any Kindle
+Touch (rooted or not). The only changes it makes to the Kindle's
+internal filesystems is to add three required entries to an application
+registration database. I don't believe that this is likely to brick
+your Kindle Touch. If it does, please email me and I'll see what I
+can do. Bear in mind, howeverm that I may not be able to help you
+out and won't replace your Kindle if something goes wrong.
+
+This package consists of two pieces:
+
+    music/Todos.mp3 - Drop this file in your Kindle's "music" folder.
+
+    WaffleApps - Drop this file in the toplevel directory on you Kindle
+
+After that:
+
+    Disconnect your Kindle from your computer
+    Click the "home" button
+    Click on the "menu" button
+    Select "Experimental" from the menu
+    Select "MP3 Player"
+    Click on "Launch Todos"
+    Get stuff done
+
+
+
+Best,
+
+    Jesse Vincent
+    jesse@fsck.com
+    2011-12-12
+
+
+Copyright 2011 Jesse Vincent <jesse@fsck.com>
+WaffleApps may be freely distributed under the MIT license.
+
+This package contains:
+    
+Backbone.js 0.5.3
+(c) 2010-2011 Jeremy Ashkenas, DocumentCloud Inc.
+Backbone may be freely distributed under the MIT license.
+(Including n example Backbone application contributed by Jérôme Gravel-Niquet (http://jgn.me/).
+
+http:www.JSON.org/json2.js 2009-09-29
+Public Domain.
+
+jQuery JavaScript Library v1.6.4
+Copyright 2011, John Resig
+Dual licensed under the MIT or GPL Version 2 licenses.
+
+Underscore.js 1.2.2
+(c) 2011 Jeremy Ashkenas, DocumentCloud Inc.
+Underscore is freely distributable under the MIT license.
